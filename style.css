@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4CAF50; /* მწვანე ფერი */
+  color: white;
+  padding: 25px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.content-section {
+  background-color: white;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #4CAF50;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #66BB6A; /* ღია მწვანე */
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4CAF50; /* მუქი მწვანე */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: relative; /* Fixed-ის ნაცვლად, თუ კონტენტი ბევრი იქნება */
+  width: 100%;
+  margin-top: 30px;
+}

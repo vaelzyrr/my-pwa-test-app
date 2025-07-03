@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი PWA ტესტი</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+    <header>
+        <h1>გამარჯობა PWA!</h1>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>ეს არის ჩემი პირველი PWA.</h2>
+            <p>მუშაობს ინტერნეტის გარეშეც!</p>
+            <button id="alertButton">დააჭირე შეტყობინებისთვის</button>
+        </section>
+        <section class="content-section">
+            <h2>ინფორმაცია</h2>
+            <p>ეს აპლიკაცია Home Screen-ზე დაინსტალირდება.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PWA ტესტი</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Service Worker-ის რეგისტრაცია
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker რეგისტრირებულია: ', registration);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker რეგისტრაციის შეცდომა: ', error);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>
